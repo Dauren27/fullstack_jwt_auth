@@ -1,0 +1,38 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: #093545;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 80px;
+    color: #ffffff;
+  }
+  .home__buttons {
+    display: flex;
+    flex-direction: column;
+    button {
+      margin-top: 20px;
+    }
+  }
+  .success,
+  .error,
+  .loading {
+    margin-top: 10px;
+    max-width: 300px;
+    word-wrap: break-word;
+  }
+  .error {
+    color: #dd2626;
+  }
+  .loading {
+    color: #287ff1;
+  }
+  .success {
+    color: #0bc136;
+  }
+}

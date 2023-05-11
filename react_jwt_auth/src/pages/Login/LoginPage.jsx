@@ -25,7 +25,7 @@ const LoginPage = () => {
   return (
     <div className={cl.login}>
       <div className={cl.login__form}>
-        <h1>Sign in</h1>
+        <h1>Вход</h1>
         <Input
           type="text"
           placeholder="Логин"
@@ -36,13 +36,16 @@ const LoginPage = () => {
           placeholder="Пароль"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div className={cl.link}>
-          <Link to="/registration">Регистрация</Link>
-        </div>
         {isError && <p className={cl.error}>{error?.data?.message}</p>}
         {isLoading && <p className={cl.loading}>Загрузка...</p>}
         {isSuccess && <p className={cl.success}>Вы успешно авторизовались</p>}
-        <Button onClick={loginHandler}>Login</Button>
+        <Button onClick={loginHandler}>Войти</Button>
+        <div className={cl.link}>
+          <span>
+            Ещё нет аккаунта? <br />
+          </span>
+          <Link to="/registration">Регистрация</Link>
+        </div>
       </div>
     </div>
   );

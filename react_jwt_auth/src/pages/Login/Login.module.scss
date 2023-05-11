@@ -23,9 +23,16 @@
       margin-top: 23px;
       width: 100%;
       display: flex;
-      justify-content: flex-end;
-      a {
+      justify-content: center;
+      span {
         font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #aaa;
+        margin-right: 10px;
+      }
+      a {
+        font-weight: bold;
         font-size: 14px;
         line-height: 17px;
         color: #ffffff;
